@@ -17,12 +17,18 @@ amount.oninput = function()
    //console.log(amout)
 }
 
+$("#field1").change(function(){
+  var amountEnterd=$(this).val();
+    $('.input-total').text("R"+ amountEnterd);
+  });
+
+
+//the slider of months
 $(".mRange1").change(function(){
 var numberOfMonths=$(this).val();
 console.log(numberOfMonths);
   $('#monthRange1').val(numberOfMonths);
 });
-
 $("#monthRange1").change(function(){
   var numberOfMonths=$(this).val();
     $('.mRange1').val(numberOfMonths);
