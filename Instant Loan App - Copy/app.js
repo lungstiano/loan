@@ -20,16 +20,23 @@ amount.oninput = function()
 $(document).ready(function(){
   $('.next').on('click', function(){
 
-
     var currentDiv = $('.active');
     var nextDiv = currentDiv.next();
 
-
         if(nextDiv.length){
-            currentDiv.removeClass('active').css('z-index', -10);
-            nextDiv.addClass('active').css('z-index', 10);
-            nextDiv.removeClass('not-active');
-            currentDiv.addClass('not-active');
+             currentDiv.removeClass('active').css('z-index', -60);            
+             nextDiv.removeClass('not-active');
+             currentDiv.addClass('not-active');
+  
+          }
+          else{
+            var currentDiv = $('.not-active');
+            var nextDiv = currentDiv.next();
+
+            currentDiv.removeClass('not-active').css('z-index', 10);
+            nextDiv.addClass('not-active');
+            currentDiv.addClass('active');
+         
           }
 
   });
