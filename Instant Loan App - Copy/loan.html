@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js" 
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+     crossorigin="anonymous"></script>
+    <title>Instant Loan Application</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-upper">
+            <div class="switch">
+                <div class="container-loan active">
+                    <div class="upper-info">
+                        <h3>How much do you need ?</h3>
+                        <input type="number" class="amount-field" id="field">
+                        <div class="slide-container">
+                            <input type="range" min="500" max="250000" step="2500" value="500" id="amountRange"
+                                class="slider-top">
+                        </div>
+                        <div class="months-dropdown">
+                            <select name="months" id="months">
+                                <option value="0"> Select Month(s)</option>
+                                <option value="1"> 1 Month</option>
+                                <option value="2"> 2 Months</option>
+                                <option value="3"> 3 Months</option>
+                                <option value="4"> 4 Months</option>
+                                <option value="5"> 5 Months</option>
+                                <option value="6"> 6 Months</option>
+                                <option value="7"> 7 Months</option>
+                            </select>
+                        </div>
+    
+                        <div class="slide-container">
+                            <input type="range" min="1" max="72" value="1" id="monthRange" class="slider-low">
+                        </div>
+    
+                    </div>
+                    <div class="total-container">
+                        <label for="payment">Your monthly repayment will be:</label>
+                        <div class="total" id="total"></div>
+                    </div>
+                </div>
+                
+                <div class="repayment-container not-active">
+                    <div class="upper-info ">
+                        <h3>How much can you repay ?</h3>
+                        <input type="number" class="amount-field" id="field">
+                       
+                        <div class="months-dropdown">
+                            <select name="months" id="months">
+                                <option value="0"> Select Month(s)</option>
+                                <option value="1"> 1 Month</option>
+                                <option value="2"> 2 Months</option>
+                                <option value="3"> 3 Months</option>
+                                <option value="4"> 4 Months</option>
+                                <option value="5"> 5 Months</option>
+                                <option value="6"> 6 Months</option>
+                                <option value="7"> 7 Months</option>
+                            </select>
+                        </div>
+    
+                        <div class="slide-container">
+                            <input type="range" min="1" max="72" value="1" id="monthRange" class="slider-low">
+                        </div>
+    
+                    </div>
+                    <div class="total-container">
+                        <label for="payment">Your monthly repayment will be:</label>
+                        <div class="total" id="total"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container-calc">
+                <p class="budget-span">calculate based on your monthly repayment budget</p>
+                <img class="next" src="images/baseline_compare_arrows_white_48dp.png" alt="">
+            </div>
+        </div>
+        <div class="container-lower">
+            <h5>What you need to apply for a Personal Loan</h5>
+            <ul>
+                <li><img src="images/Payslip.png" alt="image">
+                    <p>The most recent proof of income, reflecting 3 salary deposits</p>
+                </li>
+                <li><img src="images/Bank Statement.png" alt="image">
+                    <p>Latest bank statement, reflecting 3 salary deposits</p>
+                </li>
+            </ul>
+            <div class="bottom-wrap">
+                <p class="notice">* Please note that the amounts calculated are indicative.</p>
+                <a class="btn" href="#">Appy Now</a>
+                <p class="terms"><a href="">Terms and conditions apply</a></p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+
+</html>

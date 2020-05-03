@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* For mobile phones */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white; 
+}
+.container-upper{
+    background: #002b60;
+    display: block;
+    justify-content: center;
+
+}
+.upper-info{
+    align-items: center;
+}
+.container-upper h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+.container-upper label{
+    display: none;
+}
+.total{
+    background: #001733;
+    width: 90%;
+    height: 50%;
+    padding: .6em;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    border-color: #185bd8;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+#months{
+    background: #002b60;
+    width: 90%;
+    height: 50%;
+    padding: .6em;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    border-color: #185bd8;
+    -webkit-appearance: none;
+    
+}
+.amount-field{
+    background: #002b60;
+    width: 90%;
+    height: 50%;
+    padding: .6em;
+    border-radius: 30px;
+    color: #89bc47;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    border-color: #185bd8;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.container-calc{
+    background: #002b60;
+    font-size: 13px;
+    display: flex;
+    justify-content:space-between;
+    border-top: .5px solid rgb(49, 47, 47);
+    
+}
+.container-calc p{
+    margin: 0;
+    padding-left: 1em;  
+}
+.container-calc a img{
+    transform: rotate(90deg);
+    background-color: #0f3680;
+    width: 25px;
+    margin: 0;
+    padding: 1em;
+}
+.budget-span{
+    padding-top: .5em;
+    padding-right: 1.5em;
+}
+
+
+.container{
+    margin: 0;
+    padding: 0;
+    min-width: 80px;
+}
+
+
+
+
+/* Lower container styles */
+
+.container-lower{
+    align-content: center;
+    text-align: center;
+    background: #021d3f;
+    padding: .5em;
+    display: block;
+}
+.container-lower h5{
+    padding-top: 2em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 0em;
+    margin-bottom: .3em;
+}
+.container-lower li{
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    padding: 1em;
+
+}
+.container-lower ul{
+    padding: 1em;
+}
+.container-lower p{
+    margin: 0;
+    padding-left: 1.5em;
+}
+.container-lower .notice{
+    text-align: center;
+    font-size: 11px;
+    padding: 0;
+}
+.container-lower .btn{
+    
+    background-color: #89bc47;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: .8em;
+    margin: .3em auto;
+    display: block;
+    font-weight: bold;
+    font-size: 1em;
+    width: 80%;
+}
+.terms a{
+    text-align: center;
+    font-size: 11px;
+    padding: 0;
+    color: white;
+    
+}
+.terms{
+    padding: 0;
+    padding-bottom: 8.6em;
+}
+/* slider styles */
+.slider-top{
+    -webkit-appearance: none;
+    width: 95%;
+    background-color: #89bc47;
+    height: 5px;
+    border-radius: 10px;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.slider-top::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider-top::after{
+    content: 'R250000';
+    color: white;
+    position: absolute;
+    left: 77%;
+    top: 27%;
+}
+
+.slider-top::before{
+    content: 'R500';
+    color: white;
+    position: absolute;
+    left: 9%;
+    top: 27%;
+    padding-bottom: .5em;
+    
+}
+.slider-low{
+    -webkit-appearance: none;
+    width: 95%;
+    background-color: #185bd8;
+    height: 5px;
+    border-radius: 10px;
+    outline: none;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.slider-low::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slider-low::after{
+    content: '72 months';
+    color: white;
+    position: absolute;
+    left: 74%;
+    top: 39%;
+}
+
+.slider-low::before{
+    content: '1 month';
+    color: white;
+    position: absolute;
+    left: 9%;
+    top: 39%;
+    padding-bottom: .5em;
+    
+}
+.slide-container{
+    padding-bottom: 1em;
+    margin-top: 1em;
+}
+
+/* Madia queries */
+/* view for tables */
+/* @media only screen and (min-width: 768px)
+{
+    .container-lower .btn{
+    
+        background-color: #89bc47;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        padding: .8em;
+        margin: .3em auto;
+        display: block;
+        font-weight: bold;
+        font-size: 1em;
+        width: 90%;
+    }
+
+}
+@media only screen and (min-width: 1024px)
+{
+    .container{
+        display: flex;
+    }
+    .container-upper{
+        width: 70%;
+        padding: 0;
+    }
+
+    .container-upper label{
+        display: inline;
+    }
+    .container-calc{
+        display: flex;
+    }
+    .container-calc p{
+        margin: 0;
+        padding-left: 1em; 
+        padding-bottom: 0; 
+    }
+    .container-calc img{
+        transform: rotate(90deg);
+        background-color: #0f3680;
+        width: 25px;
+        margin: 0;
+        padding: 1em;
+    }
+    .budget-span{
+        padding-top: .5em;
+        padding-right: 1.5em;
+    }
+    .container-upper h3{
+        padding-top: .8em;
+    }
+  
+.total{
+   
+    width: 30%;
+    height: 10%;
+    padding: .2em;
+    margin-left: 6em;
+    margin-bottom: .5em;
+
+    
+}
+#months{
+   
+    width: 30%;
+    height: 10%;
+    padding: .2em;
+    margin-bottom: 1em;
+
+}
+.amount-field{
+   
+    width: 30%;
+    height: 10%;
+    padding: .2em;
+    margin-bottom: 1em;
+ 
+}
+.total-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+}
+@media only screen and(min-width: 1200)
+{
+
+} */
