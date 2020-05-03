@@ -17,6 +17,32 @@ amount.oninput = function()
    //console.log(amout)
 }
 
+$(".mRange1").change(function(){
+var numberOfMonths=$(this).val();
+console.log(numberOfMonths);
+  $('#monthRange1').val(numberOfMonths);
+});
+
+$("#monthRange1").change(function(){
+  var numberOfMonths=$(this).val();
+    $('.mRange1').val(numberOfMonths);
+  });
+
+
+
+  $(".mRange2").change(function(){
+    var numberOfMonths=$(this).val();
+    console.log(numberOfMonths);
+      $('#monthRange2').val(numberOfMonths);
+    });
+    
+    $("#monthRange2").change(function(){
+      var numberOfMonths=$(this).val();
+        $('.mRange2').val(numberOfMonths);
+      });
+
+
+
 $(document).ready(function(){
   $('.next').on('click', function(){
 
@@ -24,7 +50,7 @@ $(document).ready(function(){
     var nextDiv = currentDiv.next();
 
         if(nextDiv.length){
-             currentDiv.removeClass('active').css('z-index', -60);            
+             currentDiv.removeClass('active').css('z-index', -1);            
              nextDiv.removeClass('not-active');
              currentDiv.addClass('not-active');
   
